@@ -1,103 +1,103 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<title>Service</title>
 		<style>
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            height: 100vh;
-            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-            background-size: 1800% 1800%;
-            font-family: Arial, Helvetica, sans-serif;
-            color: black;
-            image-rendering: pixelated;
-            scrollbar-width: none;
-            overflow: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            -webkit-animation: rainbow 18s ease infinite;
-            -z-animation: rainbow 18s ease infinite;
-            -o-animation: rainbow 18s ease infinite;
-            animation: rainbow 18s ease infinite;
-        }
+			body,
+			html {
+			    margin: 0;
+			    padding: 0;
+			    width: 100vw;
+			    height: 100vh;
+			    background: linear-gradient(45deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+			    background-size: 1800% 1800%;
+			    font-family: Arial, Helvetica, sans-serif;
+			    color: black;
+			    image-rendering: pixelated;
+			    scrollbar-width: none;
+			    overflow: none;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    flex-direction: column;
+			    -webkit-animation: rainbow 18s ease infinite;
+			    -z-animation: rainbow 18s ease infinite;
+			    -o-animation: rainbow 18s ease infinite;
+			    animation: rainbow 18s ease infinite;
+			}
 
-        ::-webkit-scrollbar {
-            display: none;
-        }
+			::-webkit-scrollbar {
+			    display: none;
+			}
 
-        iframe {
-            width: 100vw;
-            height: 100vh;
-            border: none;
-            margin: 0;
-            padding: 0;
-            display: block;
-        }
+			iframe {
+			    width: 100vw;
+			    height: 100vh;
+			    border: none;
+			    margin: 0;
+			    padding: 0;
+			    display: block;
+			}
 
-        @-webkit-keyframes rainbow {
-            0% {
-                background-position: 0% 82%
-            }
-            50% {
-                background-position: 100% 19%
-            }
-            100% {
-                background-position: 0% 82%
-            }
-        }
+			@-webkit-keyframes rainbow {
+			    0% {
+				background-position: 0% 82%
+			    }
+			    50% {
+				background-position: 100% 19%
+			    }
+			    100% {
+				background-position: 0% 82%
+			    }
+			}
 
-        @-moz-keyframes rainbow {
-            0% {
-                background-position: 0% 82%
-            }
-            50% {
-                background-position: 100% 19%
-            }
-            100% {
-                background-position: 0% 82%
-            }
-        }
+			@-moz-keyframes rainbow {
+			    0% {
+				background-position: 0% 82%
+			    }
+			    50% {
+				background-position: 100% 19%
+			    }
+			    100% {
+				background-position: 0% 82%
+			    }
+			}
 
-        @-o-keyframes rainbow {
-            0% {
-                background-position: 0% 82%
-            }
-            50% {
-                background-position: 100% 19%
-            }
-            100% {
-                background-position: 0% 82%
-            }
-        }
+			@-o-keyframes rainbow {
+			    0% {
+				background-position: 0% 82%
+			    }
+			    50% {
+				background-position: 100% 19%
+			    }
+			    100% {
+				background-position: 0% 82%
+			    }
+			}
 
-        @keyframes rainbow {
-            0% {
-                background-position: 0% 82%
-            }
-            50% {
-                background-position: 100% 19%
-            }
-            100% {
-                background-position: 0% 82%
-            }
-        }
+			@keyframes rainbow {
+			    0% {
+				background-position: 0% 82%
+			    }
+			    50% {
+				background-position: 100% 19%
+			    }
+			    100% {
+				background-position: 0% 82%
+			    }
+			}
 
-        h1 {
-            padding: 1em 2em;
-            margin: 0.25em 0.25em;
-            background-color: rgba(255, 255, 255, 0.333);
-        }
-    </style>
+			h1 {
+			    padding: 1em 2em;
+			    margin: 0.25em 0.25em;
+			    background-color: rgba(255, 255, 255, 0.333);
+			}
+	    	</style>
 	</head>
 	<body>
-		<h2>Corrosion</h2>
-		<input id="url" name="url" placeholder="Enter Url">
-		<input id="go" type="submit" value="Go">
+    		<div style="width:300px;border-radius:5px;border-style:solid;border-color:#000000;text-align: center;vertical-align: text-bottom;-ms-transform: translateY(-50%);transform: translateY(-50%);">
+		<h2>Corrosion Web Proxy</h2>
+		<input id="url" name="url" placeholder="Enter Url" style="display: inline;">
+        	<input id="go" type="submit" value="Go"><br><br><p> </p></div>
 		<script>
 			function xor(str) {
 				return encodeURIComponent(str.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join(''));
