@@ -1,5 +1,7 @@
 # Corrosion
 
+I just use this to host a proxy mostly for personal use. The number in the name of this repo is just because heroku keeps marking this repo as malicious or something like that, so i have to change the name so that I can redeploy it.
+
 Titanium Networks main web proxy.
 Successor to [Alloy](https://github.com/titaniumnetwork-dev/alloy).
 
